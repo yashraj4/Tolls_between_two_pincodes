@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Route Visualization</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF-QkHDOFxeF46aaZ6e35z_9a26KAz674"></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 6,
+          center: { lat: 15.0, lng: 77.0 },
+        });
+
+        // Source and Destination
+        var source = { lat: 13.0604, lng: 77.6090 };
+        var dest = { lat: 18.5820, lng: 73.9196 };
+
+        // Route polyline example
+        var routeCoords = [
+          { lat: 13.0604, lng: 77.6090 },
+          { lat: 14.0, lng: 76.5 },
+          { lat: 16.5, lng: 75.2 },
+          { lat: 18.5820, lng: 73.9196 }
+        ];
+
+        var routePath = new google.maps.Polyline({
+          path: routeCoords,
+          geodesic: true,
+          strokeColor: "#FF0000",
+          strokeOpacity: 1.0,
+          strokeWeight: 3
+        });
+
+        routePath.setMap(map);
+
+        // Toll markers
+        var tolls = [
+          { lat: 14.5, lng: 76.2, name: "Tumkur Toll" },
+          { lat: 16.2, lng: 75.6, name: "Belgaum Toll" }
+        ];
+
+        tolls.forEach(toll => {
+          new google.maps.Marker({
+            position: { lat: toll.lat, lng: toll.lng },
+            map: map,
+            title: toll.name
+          });
+        });
+      }
+    </script>
+  </head>
+  <body onload="initMap()">
+    <div id="map" style="height:500px;width:100%"></div>
+  </body>
+</html>

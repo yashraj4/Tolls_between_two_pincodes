@@ -1,0 +1,4 @@
+spring.application.name=toll-app
+spring.cache.type=caffeine
+spring.cache.caffeine.spec=maximumSize=100,expireAfterAccess=10m
+google.api.key = 'YOUR-API-KEY'
