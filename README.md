@@ -128,3 +128,11 @@ A simple HTML file is provided to easily visualize the route and the tolls on a 
 3.  **Get Coordinates**: Run a query in your application (with the `System.out.println` from Method 1 uncommented) to get the `routeCoords` and the `tolls` data from your console.
 4.  **Paste Data**: Replace the sample data in the `routeCoords` and `tolls` arrays with the data you copied from your console.
 5.  **View**: Open the `visualizer.html` file in your web browser to see the route and toll plazas plotted on the map.
+
+#### Screenshots
+
+<img width="940" height="501" alt="image" src="https://github.com/user-attachments/assets/b29bb5e3-a924-4d8b-ab8e-904d1d3c0f48" />
+</p>
+<img width="940" height="470" alt="image" src="https://github.com/user-attachments/assets/60cf0964-5e9a-4f41-b2a9-12fade0f66f0" />
+
+
