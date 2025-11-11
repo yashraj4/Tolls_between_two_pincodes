@@ -101,7 +101,7 @@ JSON
 }
 ```
 
-##### Sample Error Response
+#### Sample Error Response
 JSON
 
 ```
