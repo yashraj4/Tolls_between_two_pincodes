@@ -83,7 +83,7 @@ curl -X POST http://localhost:8080/api/v1/toll-plazas \
 }'
 ```
 
-####Sample Success Response
+#### Sample Success Response
 JSON
 
 ```{
@@ -101,7 +101,7 @@ JSON
 }
 ```
 
-#####Sample Error Response
+##### Sample Error Response
 JSON
 
 ```
